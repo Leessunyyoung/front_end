@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js003_variable.html</title>
+  </head>
+  <body>
+    <script>
+      //변수(varialbe) :변하는 데이터(값)을 저장할 수 있는 메모리 공간이다
+      //var, let, const
+      // let은 mutable 이고 const는 immutable
+
+      //   console.log(3);
+      //   console.log(3);
+
+      let data = 3; //변수선언
+      console.log(data);
+      console.log(`data:%d`, data);
+
+      //출력기호 : %d(숫자) %s(문자열)/%c(문자) %c는 자바에서 쓰임 %b(논리) %f(실수)
+
+      let a = 'javascript';
+      console.log(`a=%s`, a);
+
+      let b = true; //논리값 true ,false ->소문자로 써야된다.
+      console.log(`b=${b}`);
+
+      let c = 4.58;
+      console.log(`c=%f`, c);
+      //   console.log(`c=%.1f`, c); chrome에선 지원안함
+      // https://developer.mozilla.org/ko/docs/Web/API/console
+
+      let d = null;
+      console.log(`d=${d}`);
+
+      //js003_variable.html:37 Uncaught ReferenceError: e is not defined
+      //   console.log(`e=${e}`);
+      //   console.log(`e=${e}`);
+      //   document.write(e);
+    </script>
+  </body>
+</html>
