@@ -18,7 +18,7 @@ console.log(`arr1 : ${arr1}`); //arr1 : 1,2,3,4
 console.log(`arr2 : ${arr2}`); //arr2 : 1,2,3,4
 
 let arr3 = [1, 2, 3];
-let arr4 = [...arr3]; //깊은복사(depp copy)
+let arr4 = [...arr3]; //깊은복사(deep copy)
 console.log(`arr3 : ${arr3}`); //arr3 : 1,2,3
 console.log(`arr4 : ${arr4}`); //arr4 : 1,2,3
 
