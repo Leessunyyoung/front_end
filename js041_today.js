@@ -1,16 +1,30 @@
-let chk = true;
-let btn = document.getElementsByTagName('button')[0];
-console.log(btn);
-let myNode = document.getElementById('p1');
-let ptNode = myNode.firstChild;
+// let chk = true;
+// let btn = document.getElementsByTagName('button')[0];
+// let myNode = document.getElementById('p1');
+// let ptNode = myNode.parentNode;
 
-btn.onclick = process;
+// console.log(myNode);
 
-let data = new Date();
-function process() {
-  let divNode = document.getElementsByTagName('button')[0];
-  if (chk) {
-    myNode = console.log(data);
-    chk = false;
-  }
-}
+// btn.onclick = process;
+
+// let data = new Date();
+
+// function process() {
+//   if (chk) {
+//     myNode.innerText = data;
+//   }
+// }
+let dateBtnNode = document.getElementsByTagName('button')[0];
+dateBtnNode.onclick = () => {
+  let pNode = document.getElementById('p');
+
+  let today = new Date();
+  let year = today.getFullYear();
+  let month = today.getMonth() + 1;
+  let date = today.getDate();
+  let hour = today.getHours();
+  let minute = today.getMinutes();
+  let second = today.getSeconds();
+
+  pNode.innerText = `${year}-${month}-${date}   ${hour}:${minute}:${second}`;
+};

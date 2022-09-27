@@ -1,3 +1,6 @@
+{
+  /* <input type="submit" value="login" />  */
+}
 // document.log_f.onsubmit = function(){
 
 // }
