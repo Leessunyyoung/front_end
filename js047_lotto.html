@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script defer src="js048_lotto.js"></script>
     <style>
       div.wrap div {
         border-radius: 50px;
@@ -28,35 +29,5 @@
       <div>50</div>
       <div>60</div>
     </div>
-
-    <script>
-      /*0.0이상 ~ 1.0미만 1부터 45까지 난수값 나오도록*/
-      /*let ran = Math.round(Math.random() * 100);
-      //round->반올림해서 나오게한다
-      console.log(ran);
-      */
-      let div = document.querySelector('div');
-      console.log(div);
-      let child = div.children;
-      console.log(child);
-      //   div.style.borderRadius = '50px';
-
-      let list = [];
-      for (let i = 1; i < 45; i++) {
-        list.push(i);
-      }
-      let result = [];
-      for (let i = 0; i <= 6; i++) {
-        let index = Math.floor(Math.random() * list.length);
-        let num = list[index];
-        list.splice(index, 1);
-        console.log(num, list);
-        result.push(num);
-      }
-      result.sort();
-      for (let i = 0; i <= 6; i++) {
-        document.write('<div>' + result[i] + '</div>');
-      }
-    </script>
   </body>
 </html>
